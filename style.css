@@ -1,0 +1,22 @@
+body{
+    background: rgb(235, 222, 222);
+    color: rgb(48, 46, 46);
+    text-align: center;
+}
+button{
+    border: none;
+    font-weight: bold;
+    background: none;
+    color: rgb(192, 65, 87);
+}
+.fat{
+    background: rgb(192, 65, 87);
+    color: white
+}
+#footer a{
+    color: rgb(48, 46, 46);
+    text-decoration: none;
+}
+.hide{
+    display: none;
+}
