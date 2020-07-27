@@ -201,3 +201,61 @@ form button:hover{
   opacity: 0;
   visibility: hidden;
  }
+
+/*==IDEIAS.HTML==*/
+#page-ideias #container{
+    display: block;
+}
+#page-ideias header{
+    display: flex;
+    justify-content: space-between;
+}
+#page-ideias nav{
+    display: flex;
+    align-items: center;
+}
+#page-ideias nav li{
+    list-style: none;
+    margin-right: 15px;
+}
+#page-ideias nav li a{
+    color: rgb(48, 46, 46);
+}
+#page-ideias nav li:last-child{
+    margin: 0;
+   
+}
+
+#page-ideias nav li:last-child a {
+    color: white;
+
+
+    width: 130px;
+    height: 28px;
+
+   background:rgb(192, 65, 87);
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: 500ms;
+}
+
+#page-ideias nav li:last-child a:hover{
+    background:rgb(0, 132, 255); 
+    text-decoration: none;
+
+}  
+section#title{
+    text-align: center;
+    margin: 55px 0;
+} 
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+section#title h1{
+    font-size: 28px;
+    margin: 0;
+}
+ 
