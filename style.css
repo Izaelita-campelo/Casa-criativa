@@ -4,9 +4,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-.hide{
-    display: none;
-}
+
+
 a {
     color:rgb(192, 65, 87);
     font-weight: bold;
@@ -43,13 +42,14 @@ main{
 }
 button{
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     letter-spacing:0.2px;
     font-weight: bold;
     background: none;
     color: rgb(192, 65, 87);
     cursor: pointer;
+    outline: none;
 }
 button:hover{
     text-decoration: underline;
@@ -61,6 +61,7 @@ button:hover{
     height: 40px;
     border-radius:10px;
     box-shadow: 2px 3px 5px rgba(172, 116, 125, 0.658);
+   outline: none;
 
 }
 #button, footer{
@@ -103,5 +104,100 @@ footer a:hover{
     margin: 8px 0;
     color:#777;
     font-weight: bold;
-    
 }
+
+/*--MODAL-- */
+#modal{
+    background:  rgb(192, 65, 87);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height:50vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#modal .content{
+    color: white;
+}
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap:22px;
+}
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+
+form input, form textarea{
+    width: 100%;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid pink;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+label{
+    font-weight:500;
+    line-height: 28px;
+    letter-spacing: 0.8;
+}
+form a {
+    background:#ffffff22;
+    border-radius: 8px;
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    color: white;
+
+    /*aplicado p o display flex*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    /*aplicado p o display grid*/
+    align-self: end;
+    transition: 500ms;
+}
+form a:hover{
+    background: white;
+    color: rgb(192, 65, 87);
+    text-decoration: none;
+
+}
+form button{
+    background: white;
+    padding: 9px;
+    border-radius: 8px;
+    width: 130px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    grid-column: 2;
+    justify-self: end;
+    transition: 500ms;
+}
+
+form button:hover{
+    background: rgb(0, 132, 255);
+    color: white;
+}
+#modal.hide{
+  opacity: 0;
+  visibility: hidden;
+ }
