@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   
-    <img src="logo.png" alt="Imagem da logomarca">
+    <head>
+        <meta charset="UTF-8">
 
-     <p>
-            Ficar em casa em períodos longos, não deve ser nada fácil.
-        </p>
-        <p>
-            Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas </strong>e tudo que for necessário para tornar esse momento mais interessante.
-        </p>
-        <p>
-            Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
-        </p>
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <section id="intro">
+                <header>
+                    <img src="logo.png" alt="Imagem da logomarca">
+                </header>
 
-        <button>Tenho uma ideia.</button>
-        <button class="fat">Ver Ideias</button>
+                <main>
 
-        <p id="footer">
-            Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a>
-        </p>
-        <script>
-            document
-            .querySelector("button.fat")
-            .addEventListener("click", function(){
-            document.querySelector("#footer")
-                .classList
-                .toggle("hide")
-            })
-        </script>
+                    <p>
+                        Ficar em casa em períodos longos, não deve ser nada fácil.
+                    </p>
+                    <p>
+                        Iremos catalogar ideias,<strong>
+                            brincadeiras, jogos, filmes, livros, cursos, dicas
+                        </strong>e tudo que for necessário para tornar esse momento mais interessante.
+                    </p>
+                    <p>
+                        Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.
+                    </p>
 
-</body>
+                </main>
+
+                <section id="button">
+                    <button>Tenho uma ideia</button>
+                    <button class="fat">Ver Ideias</button>
+                </section>
+
+                <footer>
+                    Com ♥️<a href="http://rocketseat.com.br">Rocketseat</a>
+                </footer>
+
+            </section>
+
+            <section id="last-ideias">
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/3107/3107897.svg" alt="Curso de Programção">
+
+                    <div id="content">
+                        <h3>Curso de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="descript">
+                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
+                        <a href="#">Ir para a Ideia</a>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/3043/3043238.svg" alt="Imagem de Exercicio">
+
+                    <div id="content">
+                        <h3>Exercicio em Casa</h3>
+                        <p>Atividade</p>
+                        <div class="descript">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
+                        <a href="#">Ir para a Ideia</a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="idea">
+                    <img src="https://www.flaticon.com/premium-icon/icons/svg/2975/2975842.svg" alt=" Imgem de Meditação ">
+
+                    <div id="content">
+                        <h3>Meditação</h3>
+                        <p>Saúde mental</p>
+                        <div class="descript">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
+                        <a href="#">Ir para a Ideia</a>
+                        </div> 
+                    </div>
+                   
+
+                </div>
+            </section>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
