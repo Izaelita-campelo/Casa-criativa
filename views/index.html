@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="container">
+    <div id="container">
             <section id="intro">
                 <header>
                     <a href="/">
@@ -45,50 +45,33 @@
             </section>
 
             <section id="last-ideias">
-                <div class="idea">
-                    <img src="https://image.flaticon.com/icons/svg/3107/3107897.svg" alt="Curso de Programção">
 
-                <div id="content">
-                        <h3>Curso de Programação</h3>
-                        <p>Estudo</p>
-                        <div class="descript">
-                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
-                        <a href="#">Ir para a Ideia</a>
-                        </div>
-                    </div>
-                </div>
+                {% for idea in ideas%}
 
                 <div class="idea">
-                    <img src="https://image.flaticon.com/icons/svg/3043/3043238.svg" alt="Imagem de Exercicio">
+                    <img src="{{idea.img}}" alt="{{idea.title}}">
 
                     <div id="content">
-                        <h3>Exercicio em Casa</h3>
-                        <p>Atividade</p>
+                        <h3>{{idea.title}}</h3>
+                        <p>{{idea.caterogy}}</p>
                         <div class="descript">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
-                        <a href="#">Ir para a Ideia</a>
+                            {{idea.descript}}
                         </div>
-
+                        <a href="{{idea.url}}"target="_blank">Ir para a Ideia</a>
                     </div>
-                    
                 </div>
 
-                <div class="idea">
-                    <img src="https://www.flaticon.com/premium-icon/icons/svg/2975/2975842.svg" alt=" Imgem de Meditação ">
 
-                    <div id="content">
-                        <h3>Meditação</h3>
-                        <p>Saúde mental</p>
-                        <div class="descript">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nobis accusantium earum provident excepturi quibusdam maiores amet obcaecati corporis, ea error laborum inventore aliquid aperiam ipsum possimus vitae atque. In.
-                        <a href="#">Ir para a Ideia</a>
-                        </div> 
-                    </div>
-                   
+                {% endfor %}
 
-                </div>
+                
+                 
+              
             </section>
+
         </div>
+
+
     <!--MODAL-->
     <div id="modal" class="hide">
         <div class="content">

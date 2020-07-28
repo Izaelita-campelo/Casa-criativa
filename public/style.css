@@ -120,7 +120,7 @@ footer a:hover{
 /*--MODAL-- */
 #modal{
     background:  rgb(192, 65, 87);
-    position: absolute;
+    position:fixed;
     top: 0;
      bottom: 0;
      right: 0;
