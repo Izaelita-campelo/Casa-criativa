@@ -1,12 +1,16 @@
+/*==GLOBAL==*/
+
 body{
     background: rgb(235, 222, 222);
     color: rgb(48, 46, 46);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+body.hideScroll{
+    overflow: hidden;
+}
 
-
-a {
+a{
     color:rgb(192, 65, 87);
     font-weight: bold;
     text-decoration: none;
@@ -18,27 +22,7 @@ p, .descripti{
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-}
-#container{
-    width: 80%;
-    max-width: 980px;
-    margin:40px auto;
-  
-    display:flex ;
 
-}
-#intro{
-    width: 300px;
-    margin-right: 20px;
-}
-main{
-    margin: 30px 0;
-   
-}
-#buttons{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 32pxs;
 }
 button{
     border: none;
@@ -50,20 +34,47 @@ button{
     color: rgb(192, 65, 87);
     cursor: pointer;
     outline: none;
+    transition: 500ms;
 }
-button:hover{
-    text-decoration: underline;
+.button:hover{
+    text-decoration: none;
+    background:rgb(0, 132, 255); 
 }
-.fat{
+.button{
     background: rgb(192, 65, 87);
     color: white;
     width: 150px;
     height: 40px;
+    padding: 10px;
     border-radius:10px;
     box-shadow: 2px 3px 5px rgba(172, 116, 125, 0.658);
-   outline: none;
+    outline: none;
+    transition: 500ms;
+}
+
+/*==PADRÃO==*/
+#container{
+    width: 80%;
+    max-width: 980px;
+    margin:40px auto;
+  
+    display:flex ;
 
 }
+#intro{
+    width: 300px;
+    margin-right: 55px;
+}
+main{
+    margin: 30px 0;
+   
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32pxs;
+}
+
 #button, footer{
     text-align: center;
     margin-bottom: 30px;
@@ -111,14 +122,19 @@ footer a:hover{
     background:  rgb(192, 65, 87);
     position: absolute;
     top: 0;
-    width: 100vw;
-    height:50vw;
+     bottom: 0;
+     right: 0;
+     left: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+#modal.addScroll{
+    overflow: auto;
+}
 #modal .content{
+    margin-top:5%;
     color: white;
 }
 #modal .content h1{
@@ -129,7 +145,7 @@ footer a:hover{
 #modal form{
     width: 80%;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 5%;
 
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -248,7 +264,7 @@ form button:hover{
 }  
 section#title{
     text-align: center;
-    margin: 55px 0;
+    
 } 
 section#title p{
     opacity: 0.7;
@@ -257,5 +273,19 @@ section#title p{
 section#title h1{
     font-size: 28px;
     margin: 0;
+}
+section#ideias{
+    display:grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 18px;
+}
+section#ideias .idea{
+    margin: 0;
+
+}
+section#ideias,
+section#title,
+section#footer{
+    margin-top:40px 0 ;
 }
  
