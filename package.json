@@ -1,5 +1,5 @@
 {
-  "name": "Casa-criativa",
+  "name": "ws",
   "version": "1.0.0",
   "description": "Sistema de cadastramento de ideias",
   "main": "server.js",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Izaelita-campelo/Casa-criativa/issues"
   },
-  "homepage": "https://github.com/Izaelita-campelo/Casa-criativa#readme"
+  "homepage": "https://github.com/Izaelita-campelo/Casa-criativa#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
