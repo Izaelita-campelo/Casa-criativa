@@ -47,19 +47,19 @@ nunjucks.configure('views', {
 //crei uma rota para o meu servidor
 //e capturo o pedido do cliente para responder
 server.get("/", function (req, res) {
-        let lastIdeas =[]
-        for(let idea of ideas.reverse()){
-            if(lastIdeas.length<2){
-                lastIdeas.push(idea)
-            }
+    let lastIdeas = []
+    for (let idea of ideas.reverse()) {
+        if (lastIdeas.length < 2) {
+            lastIdeas.push(idea)
         }
-       
+    }
 
-    return res.render("index.html", {ideas: lastIdeas})
+    return res.render("index.html", { ideas: lastIdeas })
 })
 
 server.get("/ideias", function (req, res) {
-    return res.render("ideias.html")
+
+    return res.render("ideias.html", { ideas: ideas.reverse() })
 })
 
 
