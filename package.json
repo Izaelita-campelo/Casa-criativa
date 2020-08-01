@@ -1,5 +1,5 @@
 {
-  "name": "ws",
+  "name": "casa-criativa",
   "version": "1.0.0",
   "description": "Sistema de cadastramento de ideias",
   "main": "server.js",
@@ -21,7 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2",
-    "sqlite": "^4.0.12"
+    "nunjucks": "^3.2.2"
+     
   }
 }
